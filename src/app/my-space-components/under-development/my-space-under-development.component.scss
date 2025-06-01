@@ -1,0 +1,57 @@
+body, :host {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.under-dev-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.2rem 1.2rem 2.2rem 1.2rem;
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+.under-dev-icon {
+  font-size: 2.7rem;
+  color: var(--color-primary-light, #7ff6ff);
+  filter: drop-shadow(0 0 8px var(--color-primary-light, #7ff6ff));
+  margin-bottom: 1.1rem;
+  opacity: 0.85;
+}
+.under-dev-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #23263A;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 8px rgba(0,230,255,0.08);
+}
+.under-dev-message {
+  color: #444;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 0.2rem;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 600px) {
+  .under-dev-container {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    max-width: 97vw;
+    border-radius: 1.7rem;
+  }
+  .under-dev-icon {
+    font-size: 2rem;
+  }
+  .under-dev-title {
+    font-size: 1.05rem;
+  }
+  .under-dev-message {
+    font-size: 0.97rem;
+  }
+} 

@@ -1,0 +1,16 @@
+
+
+<div class="info-container" [ngClass]="type">
+  <span class="info-icon">
+
+    <i [ngClass]="{
+      'fas fa-circle-info': type == 'info',
+      'fa fa-exclamation-triangle': type === 'warning',
+      'fa fa-check-circle': type === 'success',
+      'fa fa-times-circle': type === 'error'
+    }"></i>
+  </span>
+  <div class="info-content">
+    <ng-content></ng-content>
+  </div>
+</div> 
