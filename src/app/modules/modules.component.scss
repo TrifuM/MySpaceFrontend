@@ -110,6 +110,13 @@
 }
 
 @media (min-width: 900px) {
+  .modules-page-center {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .modules-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -123,4 +130,12 @@
     min-width: 320px;
     flex: 1 1 340px;
   }
+}
+
+.modules-page-center {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

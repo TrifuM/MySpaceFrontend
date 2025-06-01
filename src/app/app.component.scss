@@ -1,0 +1,36 @@
+.router-anim-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.router-anim-container > * {
+  display: block;
+  width: 100%;
+}
+
+.main-content-fade {
+  transition:
+    opacity 0.5s cubic-bezier(.4,0,.2,1),
+    transform 0.5s cubic-bezier(.4,0,.2,1),
+    filter 0.5s cubic-bezier(.4,0,.2,1);
+}
+.main-content-fade.fade-out {
+  opacity: 0;
+  transform: translateX(-120px) scale(0.92);
+  filter: blur(8px);
+  pointer-events: none;
+}
+.main-content-fade.fade-out.slide-left {
+  opacity: 0;
+  transform: translateX(-120px) scale(0.92);
+  filter: blur(8px);
+  pointer-events: none;
+}
+.main-content-fade.fade-out.slide-right {
+  opacity: 0;
+  transform: translateX(120px) scale(0.92);
+  filter: blur(8px);
+  pointer-events: none;
+}

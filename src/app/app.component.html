@@ -1,6 +1,16 @@
-<router-outlet #outlet="outlet"></router-outlet>
+<div class="main-content-fade"
+  [class.fade-out]="isFadingOut"
+  [class.slide-left]="isFadingOut && slideDirection === 'left'"
+  [class.slide-right]="isFadingOut && slideDirection === 'right'">
+  <div class="router-anim-container">
+    <router-outlet #outlet="outlet"
+      [@routeAnimations]="outlet.isActivated ? outlet.activatedRoute.routeConfig?.path : ''"
+      (@routeAnimations.start)="onRouteAnimationStart($event)"
+      (@routeAnimations.done)="onRouteAnimationDone($event)"></router-outlet>
+  </div>
+</div>
 <my-space-bottom-nav
-  *ngIf="outlet && outlet.activatedRoute?.routeConfig?.path !== 'login'"
+  *ngIf="outlet.isActivated && outlet.activatedRoute.routeConfig?.path !== 'login'"
   [active]="currentRoute"
   (navClick)="onNavClick($event)"
   (fabClick)="onFabClick()"
