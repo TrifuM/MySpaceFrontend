@@ -21,8 +21,8 @@
   justify-content: center;
 }
 .info-container.info .info-icon {
-  color: var(--color-primary-light);
-  filter: drop-shadow(0 0 6px var(--color-primary-light));
+  color: var(--color-primary-dark);
+  filter: drop-shadow(0 0 6px var(--color-primary-dark));
 }
 .info-container.warning .info-icon {
   color: var(--color-warning);

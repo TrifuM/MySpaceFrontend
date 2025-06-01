@@ -43,8 +43,8 @@
 }
 .module-title i {
   font-size: 1.5rem;
-  color: var(--color-primary-light);
-  filter: drop-shadow(0 0 6px var(--color-primary-light));
+  color: var(--color-primary-dark);
+  filter: drop-shadow(0 0 6px var(--color-primary-dark));
 }
 
 .module-desc {
@@ -89,7 +89,7 @@
 .modules-intro h2 {
   font-size: 1.45rem;
   font-weight: 800;
-  color: var(--color-primary-light);
+  color: var(--color-primary-dark);
   letter-spacing: 0.01em;
   margin-bottom: 0.4rem;
   text-shadow: 0 2px 12px var(--color-primary), 0 1px 0 #fff;
