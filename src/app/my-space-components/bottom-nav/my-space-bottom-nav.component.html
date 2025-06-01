@@ -1,0 +1,11 @@
+<nav class="my-space-bottom-nav">
+  <ul class="nav-items">
+    <li *ngFor="let item of navItems"
+        [ngClass]="{active: active === item.key}"
+        (click)="onNavClick(item.key)">
+      <span class="nav-active-bg" *ngIf="active === item.key"></span>
+      <i [ngClass]="item.icon"></i>
+      <span class="nav-label">{{ item.label }}</span>
+    </li>
+  </ul>
+</nav> 

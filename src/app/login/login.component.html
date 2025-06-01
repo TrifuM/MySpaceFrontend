@@ -23,6 +23,7 @@
   <my-space-button
     label="Log In"
     type="submit"
+    (click)="onSubmit()"
     [rounded]="true"
     [disabled]="!email || !password"
     style="margin-bottom: 1.2rem;"

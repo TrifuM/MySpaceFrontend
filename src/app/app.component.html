@@ -1,1 +1,7 @@
-<router-outlet></router-outlet>
+<router-outlet #outlet="outlet"></router-outlet>
+<my-space-bottom-nav
+  *ngIf="outlet.activatedRoute?.routeConfig?.path !== 'login'"
+  [active]="currentRoute"
+  (navClick)="onNavClick($event)"
+  (fabClick)="onFabClick()"
+></my-space-bottom-nav>
