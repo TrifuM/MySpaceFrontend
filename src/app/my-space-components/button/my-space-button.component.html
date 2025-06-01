@@ -1,0 +1,15 @@
+<button
+  [type]="type"
+  [disabled]="disabled"
+  (click)="onClick($event)"
+  class="my-space-button"
+  [ngClass]="[size, rounded ? 'rounded' : '', icon ? 'has-icon' : '', iconPosition === 'right' ? 'icon-right' : 'icon-left']"
+>
+  <ng-container *ngIf="icon && iconPosition === 'left'">
+    <span class="button-icon left"><i [ngClass]="icon"></i></span>
+  </ng-container>
+  <span class="button-label">{{ label }}</span>
+  <ng-container *ngIf="icon && iconPosition === 'right'">
+    <span class="button-icon right"><i [ngClass]="icon"></i></span>
+  </ng-container>
+</button> 

@@ -1,0 +1,51 @@
+<my-space-card class="login-center-card">
+  <h2 class="login-title">Login</h2>
+  <my-space-input
+    id="email"
+    name="email"
+    type="email"
+    placeholder="Email"
+    required
+    [(ngModel)]="email"
+    [disabled]="false"
+    style="margin-bottom: 1.2rem;"
+  ></my-space-input>
+  <my-space-input
+    id="password"
+    name="password"
+    type="password"
+    placeholder="Password"
+    required
+    [(ngModel)]="password"
+    [disabled]="false"
+    style="margin-bottom: 1.7rem;"
+  ></my-space-input>
+  <my-space-button
+    label="Log In"
+    type="submit"
+    [rounded]="true"
+    [disabled]="!email || !password"
+    style="margin-bottom: 1.2rem;"
+  ></my-space-button>
+  <div class="login-divider">
+    <span>or</span>
+  </div>
+  <my-space-button
+    label="Continue with Google"
+    type="button"
+    icon="fab fa-google"
+    iconPosition="left"
+    [rounded]="true"
+    size="large"
+    class="social-btn google-btn"
+  ></my-space-button>
+  <my-space-button
+    label="Continue with Apple"
+    type="button"
+    icon="fab fa-apple"
+    iconPosition="left"
+    [rounded]="true"
+    size="large"
+    class="social-btn apple-btn"
+  ></my-space-button>
+</my-space-card> 

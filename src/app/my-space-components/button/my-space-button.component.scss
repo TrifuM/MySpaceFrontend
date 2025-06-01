@@ -1,0 +1,83 @@
+.my-space-button {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  background: var(--gradient-main);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-base);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, filter 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  filter: none;
+}
+
+.my-space-button:active {
+  background: var(--color-secondary);
+}
+
+.my-space-button[disabled],
+.my-space-button:disabled {
+  background: #23263A !important;
+  color: rgba(255,255,255,0.5) !important;
+  cursor: not-allowed;
+  box-shadow: none !important;
+  border: none !important;
+  opacity: 1;
+}
+
+/* Social button variants */
+.social-btn {
+  background: var(--gradient-social) !important;
+  color: #fff !important;
+  border: 1.5px solid #23263A !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  border-radius: 2rem !important;
+}
+.social-btn .button-icon.left svg,
+.social-btn .button-icon.left i {
+  margin-right: 0.7em;
+}
+
+.my-space-button.rounded {
+  border-radius: 2rem;
+}
+
+.my-space-button.small {
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+}
+.my-space-button.medium {
+  font-size: 1.1rem;
+  padding: 0.8rem 1.2rem;
+}
+.my-space-button.large {
+  font-size: 1.3rem;
+  padding: 1.1rem 1.7rem;
+}
+
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.2em;
+  line-height: 1;
+}
+.button-icon.left {
+  margin-right: 0.5em;
+}
+.button-icon.right {
+  margin-left: 0.5em;
+}
+
+.button-label {
+  display: inline-block;
+  vertical-align: middle;
+} 
