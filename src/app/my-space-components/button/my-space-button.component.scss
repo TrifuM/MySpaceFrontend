@@ -19,7 +19,9 @@
 }
 
 .my-space-button:active {
-  background: var(--color-secondary);
+  background: linear-gradient(90deg, #ff00a8 0%, #00e6ff 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 0 0 2px #ff00a8, 0 0 12px 2px #00e6ff;
 }
 
 .my-space-button[disabled],
